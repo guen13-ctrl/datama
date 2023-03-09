@@ -10,7 +10,7 @@
 	<title> Book Now </title>
 	<meta name="description" content=" add description  ... ">
     
-    <!-- /// Faviconss ////////  -->
+    <!-- /// Favicons ////////  -->
     <link rel="shortcut icon" href="favicon.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<meta name="msapplication-TileColor" content="#d4ae60">
@@ -156,13 +156,56 @@
                         <input type="tel" id="phone" name="client_phone" placeholder="63XXXXXXXXXX" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
                    
                             <div class="elem-group inlined">
-                            <label for="child">Children</label>
-                            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                            <label for="child">Pax</label>
+                            <input type="number" id="child" name="total_children" placeholder="2" min="0" max="5" required>
                             </div>
+
+                            <div class="elem-group">
+                                <label for="room-selection">Seats Available</label>
+                                <select id="room-selection" name="room_preference" required>
+                                    <option value="tarlac">A</option>
+                                    <option value="pampanga">B</option>
+                                    <option value="bulacan">C</option>
+                                    <option value="bataan">D</option>
+                                    <option value="baguio">E</option>
+                                    <option value="cabanatuan">F</option>
+                                    <option value="la-union">G</option>
+                                    <option value="tuguegarao">H</option>
+                                    <option value="tuguegarao">I</option>
+                                    <option value="tuguegarao">J</option>
+                                </select>
+                                </div>
+                            
                             <div class="elem-group inlined">
                             <label for="checkin-date">Departure Trip Date</label>
                             <input type="date" id="checkin-date" name="checkin" required>
                             </div>
+
+                            <div class="elem-group">
+                                <label for="room-selection">Departure Trip Time</label>
+                                <select id="room-selection" name="room_preference" required>
+                                    <option value="tarlac">03:00H to 07:30H</option>
+                                    <option value="tarlac">07:00H to 12:30H</option>
+                                    <option value="tarlac">13:00H to 15:30H</option>     
+                                </select>
+                                </div>
+                            
+
+                             <div class="elem-group">
+                                <label for="room-selection">Seats Available</label>
+                                <select id="room-selection" name="room_preference" required>
+                                    <option value="tarlac">A</option>
+                                    <option value="pampanga">B</option>
+                                    <option value="bulacan">C</option>
+                                    <option value="bataan">D</option>
+                                    <option value="baguio">E</option>
+                                    <option value="cabanatuan">F</option>
+                                    <option value="la-union">G</option>
+                                    <option value="tuguegarao">H</option>
+                                    <option value="tuguegarao">I</option>
+                                    <option value="tuguegarao">J</option>
+                                </select>
+                                </div>
                             
                             <div class="elem-group">
                             <label for="room-selection">Select Arrival Place</label>
@@ -177,10 +220,30 @@
                                 <option value="tuguegarao">Tuguegarao</option>
                             </select>
                             </div>
+
+                            
+                            
+
                             <hr>
                             <p class="form-submit">
-                            <input class="elem-group" name="submit" type="submit" id="submit" value="Send">
+                                <style>
+            
+                                    .btn {
+                                    background-color: #04AA6D;
+                                    color: white;
+                                    padding: 12px;
+                                    margin: 10px 0;
+                                    border: none;
+                                    width: 100%;
+                                    border-radius: 3px;
+                                    cursor: pointer;
+                                    font-size: 17px;
+                                    }
+            
+                                    </style>
+                            <a href = "payment.html"><input class= "btn"  name="submit"  value="Proceed to Payment"></a>
                             </p>
+                            
                             </form>
                             
                         </div><!-- end .headline -->
